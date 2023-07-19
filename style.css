@@ -1,3 +1,45 @@
+/* VARIABLES */
+
+:root {
+  /* COLORS */
+
+  /* PRIMARY */
+
+  --clr-red-300: 0 100% 67%;
+  --clr-orange-400: 39 100% 56%;
+  --clr-teal-600: 166 100% 37%;
+  --clr-cobalt-blue-500: 234 85% 45%;
+
+  /* NEUTRAL */
+
+  --clr-white: 0 0% 100%;
+  --clr-blue-50: 221 100% 96%;
+  --clr-lavender: 241 100% 89%;
+  --clr-blue-700: 224 30% 27%;
+
+  /* GRADIENTS */
+
+  /* BACKGROUND */
+
+  --clr-slate-blue: 252 100% 67%;
+  --clr-royal-blue: 241 81% 54%;
+
+  --grad-bg: linear-gradient(
+    hsl(var(--clr-slate-blue)),
+    hsl(var(--clr-royal-blue))
+  );
+
+  /* CIRCLE */
+
+  --clr-violet-blue: 256 72% 46% / 1;
+  --clr-persian-blue: 241 72% 46% / 0;
+
+  --grad-circle: linear-gradient(
+    hsla(var(--clr-violet-blue)),
+    hsla(var(--clr-persian-blue))
+  );
+}
+
 /* RESET */
 
 *,
