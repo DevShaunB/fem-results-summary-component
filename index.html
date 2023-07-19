@@ -1,36 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Results summary component</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  Your Result
-  76
-  of 100
-
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-</body>
+    <title>Frontend Mentor | Results summary component</title>
+  </head>
+  <body>
+    <main>
+      <article class="result-summary-card">
+        <section class="result-summary-card__result">
+          <h1 class="result-summary-card__title">Your Result</h1>
+          <p class="result-summary-card__result-score">
+            <span>76</span> of 100
+          </p>
+          <div class="result-summary-card__result-info">
+            <h3 class="result-summary-card__result-info-title">Great</h3>
+            <p class="result-summary-card__result-info-desc">
+              You scored higher than 65% of the people who have taken these
+              tests.
+            </p>
+          </div>
+        </section>
+        <section class="result-summary-card__summary">
+          <h2 class="result-summary-card__title">Summary</h2>
+          <ul class="result-summary-card__summary-list">
+            <li class="result-summary-card__summary-item">
+              <img
+                src="./assets/images/icon-reaction.svg"
+                alt=""
+                class="result-summary-card__summary-icon"
+              />
+              <h3 class="result-summary-card__summary-category">Reaction</h3>
+              <p class="result-summary-card__summary-score">80 / 100</p>
+            </li>
+            <li class="result-summary-card__summary-item">
+              <img
+                src="./assets/images/icon-memory.svg"
+                alt=""
+                class="result-summary-card__summary-icon"
+              />
+              <h3 class="result-summary-card__summary-category">Memory</h3>
+              <p class="result-summary-card__summary-score">92 / 100</p>
+            </li>
+            <li class="result-summary-card__summary-item">
+              <img
+                src="./assets/images/icon-verbal.svg"
+                alt=""
+                class="result-summary-card__summary-icon"
+              />
+              <h3 class="result-summary-card__summary-category">Verbal</h3>
+              <p class="result-summary-card__summary-score">61 / 100</p>
+            </li>
+            <li class="result-summary-card__summary-item">
+              <img
+                src="./assets/images/icon-visual.svg"
+                alt=""
+                class="result-summary-card__summary-icon"
+              />
+              <h3 class="result-summary-card__summary-category">Visual</h3>
+              <p class="result-summary-card__summary-score">72 / 100</p>
+            </li>
+          </ul>
+          <button>Continue</button>
+        </section>
+      </article>
+    </main>
+  </body>
 </html>
