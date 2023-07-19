@@ -91,6 +91,13 @@ body {
   font: var(--fw-medium) 1.125rem var(--ff-sans);
 }
 
+/* CARD */
+
+.result-summary-card {
+  max-width: 20.833em;
+  margin-inline: auto;
+}
+
 /* RESULT SECTION */
 
 .result-summary-card__result {
@@ -221,7 +228,6 @@ body {
 
   .result-summary-card {
     max-width: 40.89em;
-    margin-inline: auto;
     background-color: hsl(var(--clr-white));
     display: grid;
     grid-template-columns: 1fr 1fr;
