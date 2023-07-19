@@ -82,6 +82,7 @@ button {
   background: none;
   border: none;
   color: inherit;
+  cursor: pointer;
 }
 
 /* BASE */
@@ -134,10 +135,80 @@ body {
 /* SUMMARY SECTION */
 
 .result-summary-card__summary {
-  padding: 1.333em 1.778em 1.667em;
+  font-size: 0.9375rem;
+  padding: 1.6em 2.133em 2em;
+  color: hsl(var(--clr-blue-700));
 }
 
-@media screen and (min-width: 40em) {
+.result-summary-card__title {
+  font-size: 1.125rem;
+}
+
+.result-summary-card__summary-list {
+  margin-block: 1.6em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.067em;
+}
+
+.result-summary-card__summary-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+  padding: 1.067em;
+  border-radius: 0.8em;
+  background-color: hsla(var(--clr-accent) / 0.05);
+}
+
+.result-summary-card__summary-item:nth-of-type(1) {
+  --clr-accent: var(--clr-red-300);
+}
+
+.result-summary-card__summary-item:nth-of-type(2) {
+  --clr-accent: var(--clr-orange-400);
+}
+
+.result-summary-card__summary-item:nth-of-type(3) {
+  --clr-accent: var(--clr-teal-600);
+}
+
+.result-summary-card__summary-item:nth-of-type(4) {
+  --clr-accent: var(--clr-cobalt-blue-500);
+}
+
+.result-summary-card__summary-category {
+  color: hsl(var(--clr-accent));
+}
+
+.result-summary-card__summary-category {
+  flex: 1;
+}
+
+.result-summary-card__summary-score {
+  font-weight: var(--fw-bold);
+  color: hsla(var(--clr-blue-700) / 0.5);
+}
+
+.result-summary-card__summary-score span {
+  color: hsl(var(--clr-blue-700));
+}
+
+.result-summary-card__btn {
+  width: 100%;
+  font-size: 1.0625rem;
+  font-weight: var(--fw-bold);
+  padding: 1em;
+  background-color: hsl(var(--clr-blue-700));
+  color: hsl(var(--clr-blue-50));
+  border-radius: 1.647em;
+}
+
+.result-summary-card__btn:where(:hover, :focus-visible) {
+  outline: transparent;
+  background: var(--grad-bg);
+}
+
+@media screen and (min-width: 43.75em) {
   /* BASE */
 
   body {
@@ -194,6 +265,18 @@ body {
   /* SUMMARY SECTION */
 
   .result-summary-card__summary {
+    font-size: 1.125rem;
     padding: 2.222em 2.222em 2.556em;
+  }
+
+  .result-summary-card__summary-list {
+    margin-block: 1.667em 2.278em;
+    gap: 0.889em;
+  }
+
+  .result-summary-card__summary-item {
+    gap: 0.667em;
+    padding: 0.889em;
+    border-radius: 0.667em;
   }
 }
